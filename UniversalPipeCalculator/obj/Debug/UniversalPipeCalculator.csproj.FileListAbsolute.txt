@@ -1,0 +1,11 @@
+C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\bin\Debug\UniversalPipeCalculator.exe.config
+C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\bin\Debug\UniversalPipeCalculator.exe
+C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\bin\Debug\UniversalPipeCalculator.pdb
+C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\obj\Debug\UniversalPipeCalculator.csproj.AssemblyReference.cache
+C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\obj\Debug\UniversalPipeCalculator.csproj.SuggestedBindingRedirects.cache
+C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\obj\Debug\UniversalPipeCalculator.Form1.resources
+C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\obj\Debug\UniversalPipeCalculator.Properties.Resources.resources
+C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\obj\Debug\UniversalPipeCalculator.csproj.GenerateResource.cache
+C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\obj\Debug\UniversalPipeCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\obj\Debug\UniversalPipeCalculator.exe
+C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\obj\Debug\UniversalPipeCalculator.pdb
