@@ -30,11 +30,13 @@
         {
             this.pipeCalculatorTabs = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.pipeLengthTextBox1 = new System.Windows.Forms.TextBox();
+            this.calculateButton1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.materialComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.calculateButton = new System.Windows.Forms.Button();
-            this.pipeLengthTextBox = new System.Windows.Forms.TextBox();
+            this.calculateButton2 = new System.Windows.Forms.Button();
+            this.pipeLengthTextBox2 = new System.Windows.Forms.TextBox();
             this.wallThicknessTextBox = new System.Windows.Forms.TextBox();
             this.pipeNominalDiameterTextBox = new System.Windows.Forms.TextBox();
             this.manualValueEnteringLabel = new System.Windows.Forms.Label();
@@ -46,7 +48,6 @@
             this.pipeConfiguratorLabel = new System.Windows.Forms.Label();
             this.pipeMassResultLabel1 = new System.Windows.Forms.Label();
             this.pipeMassLabel1 = new System.Windows.Forms.Label();
-            this.pipeLengthComboBox = new System.Windows.Forms.ComboBox();
             this.pipeLenghtLabel1 = new System.Windows.Forms.Label();
             this.wallThicknessComboBox = new System.Windows.Forms.ComboBox();
             this.wallThicknessLabel1 = new System.Windows.Forms.Label();
@@ -69,11 +70,13 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.pipeLengthTextBox1);
+            this.tabPage1.Controls.Add(this.calculateButton1);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.materialComboBox);
             this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.calculateButton);
-            this.tabPage1.Controls.Add(this.pipeLengthTextBox);
+            this.tabPage1.Controls.Add(this.calculateButton2);
+            this.tabPage1.Controls.Add(this.pipeLengthTextBox2);
             this.tabPage1.Controls.Add(this.wallThicknessTextBox);
             this.tabPage1.Controls.Add(this.pipeNominalDiameterTextBox);
             this.tabPage1.Controls.Add(this.manualValueEnteringLabel);
@@ -85,7 +88,6 @@
             this.tabPage1.Controls.Add(this.pipeConfiguratorLabel);
             this.tabPage1.Controls.Add(this.pipeMassResultLabel1);
             this.tabPage1.Controls.Add(this.pipeMassLabel1);
-            this.tabPage1.Controls.Add(this.pipeLengthComboBox);
             this.tabPage1.Controls.Add(this.pipeLenghtLabel1);
             this.tabPage1.Controls.Add(this.wallThicknessComboBox);
             this.tabPage1.Controls.Add(this.wallThicknessLabel1);
@@ -98,6 +100,23 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Pipe weight";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // pipeLengthTextBox1
+            // 
+            this.pipeLengthTextBox1.Location = new System.Drawing.Point(25, 334);
+            this.pipeLengthTextBox1.Name = "pipeLengthTextBox1";
+            this.pipeLengthTextBox1.Size = new System.Drawing.Size(188, 26);
+            this.pipeLengthTextBox1.TabIndex = 23;
+            // 
+            // calculateButton1
+            // 
+            this.calculateButton1.Location = new System.Drawing.Point(24, 509);
+            this.calculateButton1.Name = "calculateButton1";
+            this.calculateButton1.Size = new System.Drawing.Size(189, 52);
+            this.calculateButton1.TabIndex = 22;
+            this.calculateButton1.Text = "Licz";
+            this.calculateButton1.UseVisualStyleBackColor = true;
+            this.calculateButton1.Click += new System.EventHandler(this.calculateButton1_Click);
             // 
             // label1
             // 
@@ -125,22 +144,22 @@
             this.label2.TabIndex = 19;
             this.label2.Text = "Materiał";
             // 
-            // calculateButton
+            // calculateButton2
             // 
-            this.calculateButton.Location = new System.Drawing.Point(480, 509);
-            this.calculateButton.Name = "calculateButton";
-            this.calculateButton.Size = new System.Drawing.Size(189, 52);
-            this.calculateButton.TabIndex = 18;
-            this.calculateButton.Text = "Licz";
-            this.calculateButton.UseVisualStyleBackColor = true;
-            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
+            this.calculateButton2.Location = new System.Drawing.Point(480, 509);
+            this.calculateButton2.Name = "calculateButton2";
+            this.calculateButton2.Size = new System.Drawing.Size(189, 52);
+            this.calculateButton2.TabIndex = 18;
+            this.calculateButton2.Text = "Licz";
+            this.calculateButton2.UseVisualStyleBackColor = true;
+            this.calculateButton2.Click += new System.EventHandler(this.calculateButton2_Click);
             // 
-            // pipeLengthTextBox
+            // pipeLengthTextBox2
             // 
-            this.pipeLengthTextBox.Location = new System.Drawing.Point(480, 334);
-            this.pipeLengthTextBox.Name = "pipeLengthTextBox";
-            this.pipeLengthTextBox.Size = new System.Drawing.Size(188, 26);
-            this.pipeLengthTextBox.TabIndex = 17;
+            this.pipeLengthTextBox2.Location = new System.Drawing.Point(480, 334);
+            this.pipeLengthTextBox2.Name = "pipeLengthTextBox2";
+            this.pipeLengthTextBox2.Size = new System.Drawing.Size(188, 26);
+            this.pipeLengthTextBox2.TabIndex = 17;
             // 
             // wallThicknessTextBox
             // 
@@ -173,7 +192,6 @@
             this.pipeMassResultLabel2.Name = "pipeMassResultLabel2";
             this.pipeMassResultLabel2.Size = new System.Drawing.Size(188, 28);
             this.pipeMassResultLabel2.TabIndex = 13;
-            this.pipeMassResultLabel2.Click += new System.EventHandler(this.pipeMassResultLabel2_Click);
             // 
             // pipeMassLabel2
             // 
@@ -237,14 +255,6 @@
             this.pipeMassLabel1.TabIndex = 6;
             this.pipeMassLabel1.Text = "Masa rury [kg]";
             // 
-            // pipeLengthComboBox
-            // 
-            this.pipeLengthComboBox.FormattingEnabled = true;
-            this.pipeLengthComboBox.Location = new System.Drawing.Point(25, 332);
-            this.pipeLengthComboBox.Name = "pipeLengthComboBox";
-            this.pipeLengthComboBox.Size = new System.Drawing.Size(188, 28);
-            this.pipeLengthComboBox.TabIndex = 5;
-            // 
             // pipeLenghtLabel1
             // 
             this.pipeLenghtLabel1.AutoSize = true;
@@ -278,7 +288,6 @@
             this.pipeNominalDiameterComboBox.Name = "pipeNominalDiameterComboBox";
             this.pipeNominalDiameterComboBox.Size = new System.Drawing.Size(188, 28);
             this.pipeNominalDiameterComboBox.TabIndex = 1;
-            this.pipeNominalDiameterComboBox.SelectedIndexChanged += new System.EventHandler(this.pipeNominalDiameterComboBox_SelectedIndexChanged);
             // 
             // nominalDiameterLabel1
             // 
@@ -325,7 +334,6 @@
         private System.Windows.Forms.ComboBox pipeNominalDiameterComboBox;
         private System.Windows.Forms.ComboBox wallThicknessComboBox;
         private System.Windows.Forms.Label wallThicknessLabel1;
-        private System.Windows.Forms.ComboBox pipeLengthComboBox;
         private System.Windows.Forms.Label pipeLenghtLabel1;
         private System.Windows.Forms.Label pipeMassResultLabel1;
         private System.Windows.Forms.Label pipeMassLabel1;
@@ -337,12 +345,14 @@
         private System.Windows.Forms.Label wallThicknessLabel2;
         private System.Windows.Forms.Label nominalDiameterLabel2;
         private System.Windows.Forms.Label pipeConfiguratorLabel;
-        private System.Windows.Forms.TextBox pipeLengthTextBox;
+        private System.Windows.Forms.TextBox pipeLengthTextBox2;
         private System.Windows.Forms.TextBox wallThicknessTextBox;
-        private System.Windows.Forms.Button calculateButton;
+        private System.Windows.Forms.Button calculateButton2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox materialComboBox;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button calculateButton1;
+        private System.Windows.Forms.TextBox pipeLengthTextBox1;
     }
 }
 
