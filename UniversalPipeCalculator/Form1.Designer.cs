@@ -107,6 +107,7 @@
             this.pipeLengthTextBox1.Name = "pipeLengthTextBox1";
             this.pipeLengthTextBox1.Size = new System.Drawing.Size(188, 26);
             this.pipeLengthTextBox1.TabIndex = 23;
+            this.pipeLengthTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.pipeLengthTextBox1_KeyPress);
             // 
             // calculateButton1
             // 
@@ -114,7 +115,7 @@
             this.calculateButton1.Name = "calculateButton1";
             this.calculateButton1.Size = new System.Drawing.Size(189, 52);
             this.calculateButton1.TabIndex = 22;
-            this.calculateButton1.Text = "Licz";
+            this.calculateButton1.Text = "Count";
             this.calculateButton1.UseVisualStyleBackColor = true;
             this.calculateButton1.Click += new System.EventHandler(this.calculateButton1_Click);
             // 
@@ -123,9 +124,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(940, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 20);
+            this.label1.Size = new System.Drawing.Size(97, 20);
             this.label1.TabIndex = 21;
-            this.label1.Text = "Konfigurator";
+            this.label1.Text = "Configurator";
             // 
             // materialComboBox
             // 
@@ -140,9 +141,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(940, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 20);
+            this.label2.Size = new System.Drawing.Size(65, 20);
             this.label2.TabIndex = 19;
-            this.label2.Text = "Materiał";
+            this.label2.Text = "Material";
             // 
             // calculateButton2
             // 
@@ -150,7 +151,7 @@
             this.calculateButton2.Name = "calculateButton2";
             this.calculateButton2.Size = new System.Drawing.Size(189, 52);
             this.calculateButton2.TabIndex = 18;
-            this.calculateButton2.Text = "Licz";
+            this.calculateButton2.Text = "Count";
             this.calculateButton2.UseVisualStyleBackColor = true;
             this.calculateButton2.Click += new System.EventHandler(this.calculateButton2_Click);
             // 
@@ -160,6 +161,7 @@
             this.pipeLengthTextBox2.Name = "pipeLengthTextBox2";
             this.pipeLengthTextBox2.Size = new System.Drawing.Size(188, 26);
             this.pipeLengthTextBox2.TabIndex = 17;
+            this.pipeLengthTextBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.pipeLengthTextBox2_KeyPress);
             // 
             // wallThicknessTextBox
             // 
@@ -167,6 +169,7 @@
             this.wallThicknessTextBox.Name = "wallThicknessTextBox";
             this.wallThicknessTextBox.Size = new System.Drawing.Size(188, 26);
             this.wallThicknessTextBox.TabIndex = 16;
+            this.wallThicknessTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.wallThicknessTextBox_KeyPress);
             // 
             // pipeNominalDiameterTextBox
             // 
@@ -174,6 +177,7 @@
             this.pipeNominalDiameterTextBox.Name = "pipeNominalDiameterTextBox";
             this.pipeNominalDiameterTextBox.Size = new System.Drawing.Size(188, 26);
             this.pipeNominalDiameterTextBox.TabIndex = 15;
+            this.pipeNominalDiameterTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.pipeNominalDiameterTextBox_KeyPress);
             // 
             // manualValueEnteringLabel
             // 
@@ -181,9 +185,9 @@
             this.manualValueEnteringLabel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.manualValueEnteringLabel.Location = new System.Drawing.Point(480, 32);
             this.manualValueEnteringLabel.Name = "manualValueEnteringLabel";
-            this.manualValueEnteringLabel.Size = new System.Drawing.Size(169, 20);
+            this.manualValueEnteringLabel.Size = new System.Drawing.Size(61, 20);
             this.manualValueEnteringLabel.TabIndex = 14;
-            this.manualValueEnteringLabel.Text = "Ręczne wprowadzanie";
+            this.manualValueEnteringLabel.Text = "Manual";
             // 
             // pipeMassResultLabel2
             // 
@@ -198,45 +202,45 @@
             this.pipeMassLabel2.AutoSize = true;
             this.pipeMassLabel2.Location = new System.Drawing.Point(480, 392);
             this.pipeMassLabel2.Name = "pipeMassLabel2";
-            this.pipeMassLabel2.Size = new System.Drawing.Size(107, 20);
+            this.pipeMassLabel2.Size = new System.Drawing.Size(88, 20);
             this.pipeMassLabel2.TabIndex = 12;
-            this.pipeMassLabel2.Text = "Masa rury [kg]";
+            this.pipeMassLabel2.Text = "Weight [kg]";
             // 
             // pipeLenghtLabel2
             // 
             this.pipeLenghtLabel2.AutoSize = true;
             this.pipeLenghtLabel2.Location = new System.Drawing.Point(480, 292);
             this.pipeLenghtLabel2.Name = "pipeLenghtLabel2";
-            this.pipeLenghtLabel2.Size = new System.Drawing.Size(193, 20);
+            this.pipeLenghtLabel2.Size = new System.Drawing.Size(84, 20);
             this.pipeLenghtLabel2.TabIndex = 11;
-            this.pipeLenghtLabel2.Text = "Długość całkowita rury [m]";
+            this.pipeLenghtLabel2.Text = "Length [m]";
             // 
             // wallThicknessLabel2
             // 
             this.wallThicknessLabel2.AutoSize = true;
             this.wallThicknessLabel2.Location = new System.Drawing.Point(480, 192);
             this.wallThicknessLabel2.Name = "wallThicknessLabel2";
-            this.wallThicknessLabel2.Size = new System.Drawing.Size(160, 20);
+            this.wallThicknessLabel2.Size = new System.Drawing.Size(148, 20);
             this.wallThicknessLabel2.TabIndex = 10;
-            this.wallThicknessLabel2.Text = "Grubość ścianki [mm]";
+            this.wallThicknessLabel2.Text = "Wall thickness [mm]";
             // 
             // nominalDiameterLabel2
             // 
             this.nominalDiameterLabel2.AutoSize = true;
             this.nominalDiameterLabel2.Location = new System.Drawing.Point(480, 92);
             this.nominalDiameterLabel2.Name = "nominalDiameterLabel2";
-            this.nominalDiameterLabel2.Size = new System.Drawing.Size(176, 20);
+            this.nominalDiameterLabel2.Size = new System.Drawing.Size(159, 20);
             this.nominalDiameterLabel2.TabIndex = 9;
-            this.nominalDiameterLabel2.Text = "Średnica nominalna DN";
+            this.nominalDiameterLabel2.Text = "Nominal pipe size DN";
             // 
             // pipeConfiguratorLabel
             // 
             this.pipeConfiguratorLabel.AutoSize = true;
             this.pipeConfiguratorLabel.Location = new System.Drawing.Point(20, 32);
             this.pipeConfiguratorLabel.Name = "pipeConfiguratorLabel";
-            this.pipeConfiguratorLabel.Size = new System.Drawing.Size(107, 20);
+            this.pipeConfiguratorLabel.Size = new System.Drawing.Size(113, 20);
             this.pipeConfiguratorLabel.TabIndex = 8;
-            this.pipeConfiguratorLabel.Text = "Wybierz z listy";
+            this.pipeConfiguratorLabel.Text = "Select from list";
             // 
             // pipeMassResultLabel1
             // 
@@ -251,21 +255,22 @@
             this.pipeMassLabel1.AutoSize = true;
             this.pipeMassLabel1.Location = new System.Drawing.Point(20, 392);
             this.pipeMassLabel1.Name = "pipeMassLabel1";
-            this.pipeMassLabel1.Size = new System.Drawing.Size(107, 20);
+            this.pipeMassLabel1.Size = new System.Drawing.Size(88, 20);
             this.pipeMassLabel1.TabIndex = 6;
-            this.pipeMassLabel1.Text = "Masa rury [kg]";
+            this.pipeMassLabel1.Text = "Weight [kg]";
             // 
             // pipeLenghtLabel1
             // 
             this.pipeLenghtLabel1.AutoSize = true;
             this.pipeLenghtLabel1.Location = new System.Drawing.Point(20, 292);
             this.pipeLenghtLabel1.Name = "pipeLenghtLabel1";
-            this.pipeLenghtLabel1.Size = new System.Drawing.Size(193, 20);
+            this.pipeLenghtLabel1.Size = new System.Drawing.Size(84, 20);
             this.pipeLenghtLabel1.TabIndex = 4;
-            this.pipeLenghtLabel1.Text = "Długość całkowita rury [m]";
+            this.pipeLenghtLabel1.Text = "Length [m]";
             // 
             // wallThicknessComboBox
             // 
+            this.wallThicknessComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.wallThicknessComboBox.FormattingEnabled = true;
             this.wallThicknessComboBox.Location = new System.Drawing.Point(25, 232);
             this.wallThicknessComboBox.Name = "wallThicknessComboBox";
@@ -277,12 +282,13 @@
             this.wallThicknessLabel1.AutoSize = true;
             this.wallThicknessLabel1.Location = new System.Drawing.Point(20, 192);
             this.wallThicknessLabel1.Name = "wallThicknessLabel1";
-            this.wallThicknessLabel1.Size = new System.Drawing.Size(160, 20);
+            this.wallThicknessLabel1.Size = new System.Drawing.Size(148, 20);
             this.wallThicknessLabel1.TabIndex = 2;
-            this.wallThicknessLabel1.Text = "Grubość ścianki [mm]";
+            this.wallThicknessLabel1.Text = "Wall thickness [mm]";
             // 
             // pipeNominalDiameterComboBox
             // 
+            this.pipeNominalDiameterComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.pipeNominalDiameterComboBox.FormattingEnabled = true;
             this.pipeNominalDiameterComboBox.Location = new System.Drawing.Point(25, 132);
             this.pipeNominalDiameterComboBox.Name = "pipeNominalDiameterComboBox";
@@ -294,9 +300,9 @@
             this.nominalDiameterLabel1.AutoSize = true;
             this.nominalDiameterLabel1.Location = new System.Drawing.Point(20, 92);
             this.nominalDiameterLabel1.Name = "nominalDiameterLabel1";
-            this.nominalDiameterLabel1.Size = new System.Drawing.Size(176, 20);
+            this.nominalDiameterLabel1.Size = new System.Drawing.Size(159, 20);
             this.nominalDiameterLabel1.TabIndex = 0;
-            this.nominalDiameterLabel1.Text = "Średnica nominalna DN";
+            this.nominalDiameterLabel1.Text = "Nominal pipe size DN";
             // 
             // tabPage2
             // 

@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -22,18 +24,19 @@ namespace UniversalPipeCalculator
         private void Form1_Load(object sender, EventArgs e)
         {
             List<Material> material = new List<Material>();
-            material.Add(new Material() { density = 7840, densityName = "Stal węglowa" });
+            material.Add(new Material() { density = 7840, densityName = "Carbon steel" });
             material.Add(new Material() { density = 1450, densityName = "PVC" });
-            material.Add(new Material() { density = 7860, densityName = "Czysta żelazo" });
-            material.Add(new Material() { density = 7750, densityName = "Kute żelazo" });
-            material.Add(new Material() { density = 7880, densityName = "Stal miękka" });
-            material.Add(new Material() { density = 8030, densityName = "Stal nierdzewna" });
-            material.Add(new Material() { density = 2700, densityName = "Aluminium" });
-            material.Add(new Material() { density = 8500, densityName = "Mosiądz" });
-            material.Add(new Material() { density = 8960, densityName = "Miedź" });
+            material.Add(new Material() { density = 7860, densityName = "Pure iron" });
+            material.Add(new Material() { density = 7750, densityName = "Wrought iron" });
+            material.Add(new Material() { density = 7880, densityName = "Mild steel" });
+            material.Add(new Material() { density = 8030, densityName = "Stainless steel" });
+            material.Add(new Material() { density = 2700, densityName = "Aluminum" });
+            material.Add(new Material() { density = 8500, densityName = "Brass" });
+            material.Add(new Material() { density = 8960, densityName = "Copper" });
             materialComboBox.DataSource = material;
             materialComboBox.ValueMember = "density";
             materialComboBox.DisplayMember = "densityName";
+
 
             List<NominalDiameter> nominalDiameter = new List<NominalDiameter>();
             nominalDiameter.Add(new NominalDiameter() { nominalDiameter = 10.2, nominalDiameterName = "DN6  (10,2)" });
@@ -97,6 +100,7 @@ namespace UniversalPipeCalculator
             wallThicknessComboBox.DataSource = wallThickness;
             wallThicknessComboBox.ValueMember = "wallThickness";
             wallThicknessComboBox.DisplayMember = "wallThicknessName";
+
         }
 
         private void calculateButton2_Click(object sender, EventArgs e)
@@ -122,9 +126,59 @@ namespace UniversalPipeCalculator
             double pipeMassResult = (pi * (pipeMassResult1 - pipeMassResult2) * pipeLength1) * materialComboBoxValue;
             pipeMassResultLabel1.Text = pipeMassResult.ToString("N3");
         }
+
+        private void pipeNominalDiameterTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != ','))
+            {
+                e.Handled = true;
+            }
+            if ((e.KeyChar == ',') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void wallThicknessTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != ','))
+            {
+                e.Handled = true;
+            }
+            if ((e.KeyChar == ',') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void pipeLengthTextBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != ','))
+            {
+                e.Handled = true;
+            }
+            if ((e.KeyChar == ',') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void pipeLengthTextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != ','))
+            {
+                e.Handled = true;
+            }
+            if ((e.KeyChar == ',') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }
 
-// Uniemożliwić użytkownikowi modyfikowania zawartości listy oraz wpisywania innych wartości niż numeryczne.
-// Kropka i przecinek akceptowalne przy liczbach zmiennoprzecinkowych. 
 // Na dole pole które wyświetal np. "Wybrana rura to: DN25 (33,7 x 2,9 mm o długości 1 m - materiał Stal węglowa o gęstości 7840 kg/m3)
