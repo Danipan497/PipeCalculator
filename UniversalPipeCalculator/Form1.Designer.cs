@@ -54,11 +54,22 @@
             this.pipeNominalDiameterComboBox = new System.Windows.Forms.ComboBox();
             this.nominalDiameterLabel1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.multipleBoltSetsMassResultLabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.numberOfBoltSetsCheckbox = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.boltSetMassResultLabel = new System.Windows.Forms.Label();
+            this.boltWeightLabel = new System.Windows.Forms.Label();
+            this.BoltLengthTextBox = new System.Windows.Forms.TextBox();
+            this.boltsLenghtLabel = new System.Windows.Forms.Label();
+            this.quantityOfPadsComboBox = new System.Windows.Forms.ComboBox();
+            this.quantityOfPadsLabel = new System.Windows.Forms.Label();
+            this.quantityOfNutsComboBox = new System.Windows.Forms.ComboBox();
+            this.quantityOfNutsLabel = new System.Windows.Forms.Label();
+            this.boltSizeLabel = new System.Windows.Forms.Label();
+            this.boltSizeComboBox = new System.Windows.Forms.ComboBox();
+            this.boltConfiguratorLabel = new System.Windows.Forms.Label();
             this.pipeCalculatorTabs.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -313,11 +324,22 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.comboBox2);
-            this.tabPage2.Controls.Add(this.label5);
+            this.tabPage2.Controls.Add(this.multipleBoltSetsMassResultLabel);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.comboBox1);
-            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.numberOfBoltSetsCheckbox);
+            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.boltSetMassResultLabel);
+            this.tabPage2.Controls.Add(this.boltWeightLabel);
+            this.tabPage2.Controls.Add(this.BoltLengthTextBox);
+            this.tabPage2.Controls.Add(this.boltsLenghtLabel);
+            this.tabPage2.Controls.Add(this.quantityOfPadsComboBox);
+            this.tabPage2.Controls.Add(this.quantityOfPadsLabel);
+            this.tabPage2.Controls.Add(this.quantityOfNutsComboBox);
+            this.tabPage2.Controls.Add(this.quantityOfNutsLabel);
+            this.tabPage2.Controls.Add(this.boltSizeLabel);
+            this.tabPage2.Controls.Add(this.boltSizeComboBox);
+            this.tabPage2.Controls.Add(this.boltConfiguratorLabel);
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -326,48 +348,142 @@
             this.tabPage2.Text = "Bolts weight";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // multipleBoltSetsMassResultLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 32);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Select form list";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(25, 132);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(188, 28);
-            this.comboBox1.TabIndex = 1;
+            this.multipleBoltSetsMassResultLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.multipleBoltSetsMassResultLabel.Location = new System.Drawing.Point(480, 232);
+            this.multipleBoltSetsMassResultLabel.Name = "multipleBoltSetsMassResultLabel";
+            this.multipleBoltSetsMassResultLabel.Size = new System.Drawing.Size(188, 28);
+            this.multipleBoltSetsMassResultLabel.TabIndex = 16;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 92);
+            this.label4.Location = new System.Drawing.Point(480, 192);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 20);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Bolt size";
+            this.label4.Size = new System.Drawing.Size(177, 20);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Multiple bolt sets weight";
             // 
-            // label5
+            // comboBox1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 192);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(121, 20);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Quantity of nuts";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(480, 132);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(188, 28);
+            this.comboBox1.TabIndex = 14;
             // 
-            // comboBox2
+            // numberOfBoltSetsCheckbox
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(25, 232);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(188, 28);
-            this.comboBox2.TabIndex = 4;
+            this.numberOfBoltSetsCheckbox.AutoSize = true;
+            this.numberOfBoltSetsCheckbox.Location = new System.Drawing.Point(480, 92);
+            this.numberOfBoltSetsCheckbox.Name = "numberOfBoltSetsCheckbox";
+            this.numberOfBoltSetsCheckbox.Size = new System.Drawing.Size(153, 24);
+            this.numberOfBoltSetsCheckbox.TabIndex = 13;
+            this.numberOfBoltSetsCheckbox.Text = "Multiple bolt sets";
+            this.numberOfBoltSetsCheckbox.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(25, 606);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(189, 52);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Count";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // boltSetMassResultLabel
+            // 
+            this.boltSetMassResultLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.boltSetMassResultLabel.Location = new System.Drawing.Point(25, 532);
+            this.boltSetMassResultLabel.Name = "boltSetMassResultLabel";
+            this.boltSetMassResultLabel.Size = new System.Drawing.Size(188, 28);
+            this.boltSetMassResultLabel.TabIndex = 11;
+            // 
+            // boltWeightLabel
+            // 
+            this.boltWeightLabel.AutoSize = true;
+            this.boltWeightLabel.Location = new System.Drawing.Point(25, 492);
+            this.boltWeightLabel.Name = "boltWeightLabel";
+            this.boltWeightLabel.Size = new System.Drawing.Size(113, 20);
+            this.boltWeightLabel.TabIndex = 10;
+            this.boltWeightLabel.Text = "Bolt set weight";
+            // 
+            // BoltLengthTextBox
+            // 
+            this.BoltLengthTextBox.Location = new System.Drawing.Point(25, 432);
+            this.BoltLengthTextBox.Name = "BoltLengthTextBox";
+            this.BoltLengthTextBox.Size = new System.Drawing.Size(188, 26);
+            this.BoltLengthTextBox.TabIndex = 9;
+            // 
+            // boltsLenghtLabel
+            // 
+            this.boltsLenghtLabel.AutoSize = true;
+            this.boltsLenghtLabel.Location = new System.Drawing.Point(20, 392);
+            this.boltsLenghtLabel.Name = "boltsLenghtLabel";
+            this.boltsLenghtLabel.Size = new System.Drawing.Size(85, 20);
+            this.boltsLenghtLabel.TabIndex = 7;
+            this.boltsLenghtLabel.Text = "Bolt length";
+            // 
+            // quantityOfPadsComboBox
+            // 
+            this.quantityOfPadsComboBox.FormattingEnabled = true;
+            this.quantityOfPadsComboBox.Location = new System.Drawing.Point(25, 332);
+            this.quantityOfPadsComboBox.Name = "quantityOfPadsComboBox";
+            this.quantityOfPadsComboBox.Size = new System.Drawing.Size(188, 28);
+            this.quantityOfPadsComboBox.TabIndex = 6;
+            // 
+            // quantityOfPadsLabel
+            // 
+            this.quantityOfPadsLabel.AutoSize = true;
+            this.quantityOfPadsLabel.Location = new System.Drawing.Point(20, 292);
+            this.quantityOfPadsLabel.Name = "quantityOfPadsLabel";
+            this.quantityOfPadsLabel.Size = new System.Drawing.Size(125, 20);
+            this.quantityOfPadsLabel.TabIndex = 5;
+            this.quantityOfPadsLabel.Text = "Quantity of pads";
+            // 
+            // quantityOfNutsComboBox
+            // 
+            this.quantityOfNutsComboBox.FormattingEnabled = true;
+            this.quantityOfNutsComboBox.Location = new System.Drawing.Point(25, 232);
+            this.quantityOfNutsComboBox.Name = "quantityOfNutsComboBox";
+            this.quantityOfNutsComboBox.Size = new System.Drawing.Size(188, 28);
+            this.quantityOfNutsComboBox.TabIndex = 4;
+            // 
+            // quantityOfNutsLabel
+            // 
+            this.quantityOfNutsLabel.AutoSize = true;
+            this.quantityOfNutsLabel.Location = new System.Drawing.Point(20, 192);
+            this.quantityOfNutsLabel.Name = "quantityOfNutsLabel";
+            this.quantityOfNutsLabel.Size = new System.Drawing.Size(121, 20);
+            this.quantityOfNutsLabel.TabIndex = 3;
+            this.quantityOfNutsLabel.Text = "Quantity of nuts";
+            // 
+            // boltSizeLabel
+            // 
+            this.boltSizeLabel.AutoSize = true;
+            this.boltSizeLabel.Location = new System.Drawing.Point(20, 92);
+            this.boltSizeLabel.Name = "boltSizeLabel";
+            this.boltSizeLabel.Size = new System.Drawing.Size(69, 20);
+            this.boltSizeLabel.TabIndex = 2;
+            this.boltSizeLabel.Text = "Bolt size";
+            // 
+            // boltSizeComboBox
+            // 
+            this.boltSizeComboBox.FormattingEnabled = true;
+            this.boltSizeComboBox.Location = new System.Drawing.Point(25, 132);
+            this.boltSizeComboBox.Name = "boltSizeComboBox";
+            this.boltSizeComboBox.Size = new System.Drawing.Size(188, 28);
+            this.boltSizeComboBox.TabIndex = 1;
+            // 
+            // boltConfiguratorLabel
+            // 
+            this.boltConfiguratorLabel.AutoSize = true;
+            this.boltConfiguratorLabel.Location = new System.Drawing.Point(20, 32);
+            this.boltConfiguratorLabel.Name = "boltConfiguratorLabel";
+            this.boltConfiguratorLabel.Size = new System.Drawing.Size(113, 20);
+            this.boltConfiguratorLabel.TabIndex = 0;
+            this.boltConfiguratorLabel.Text = "Select form list";
             // 
             // Form1
             // 
@@ -416,11 +532,22 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button calculateButton1;
         private System.Windows.Forms.TextBox pipeLengthTextBox1;
+        private System.Windows.Forms.ComboBox boltSizeComboBox;
+        private System.Windows.Forms.Label boltConfiguratorLabel;
+        private System.Windows.Forms.Label boltSizeLabel;
+        private System.Windows.Forms.ComboBox quantityOfNutsComboBox;
+        private System.Windows.Forms.Label quantityOfNutsLabel;
+        private System.Windows.Forms.Label boltsLenghtLabel;
+        private System.Windows.Forms.ComboBox quantityOfPadsComboBox;
+        private System.Windows.Forms.Label quantityOfPadsLabel;
+        private System.Windows.Forms.TextBox BoltLengthTextBox;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label boltSetMassResultLabel;
+        private System.Windows.Forms.Label boltWeightLabel;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox numberOfBoltSetsCheckbox;
+        private System.Windows.Forms.Label multipleBoltSetsMassResultLabel;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label5;
     }
 }
 

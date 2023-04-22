@@ -9,3 +9,14 @@ C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\obj\Debug\Un
 C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\obj\Debug\UniversalPipeCalculator.csproj.CoreCompileInputs.cache
 C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\obj\Debug\UniversalPipeCalculator.exe
 C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\obj\Debug\UniversalPipeCalculator.pdb
+C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\bin\Debug\Bolts.mdf
+C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\bin\Debug\Bolts_log.ldf
+C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\bin\Debug\System.Security.Permissions.dll
+C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\bin\Debug\System.Security.Permissions.xml
+C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Daniel\source\repos\PipeCalculator\UniversalPipeCalculator\obj\Debug\UniversalPipeCalculator.csproj.CopyComplete

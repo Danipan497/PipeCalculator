@@ -9,20 +9,30 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace UniversalPipeCalculator
 {
     public partial class Form1 : Form
     {
+        SqlConnection connection;
+        string connectionString;
         public Form1()
         {
             InitializeComponent();
+
+            connectionString = ConfigurationManager.ConnectionStrings["UniversalPipeCalculator.Properties.Settings.BoltsSetsConnectionString"].ConnectionString;
+
         }
+
+
 
         double pi = Math.PI;
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
             List<Material> material = new List<Material>();
             material.Add(new Material() { density = 7840, densityName = "Carbon steel" });
             material.Add(new Material() { density = 1450, densityName = "PVC" });
@@ -69,7 +79,7 @@ namespace UniversalPipeCalculator
             nominalDiameter.Add(new NominalDiameter() { nominalDiameter = 1420.0, nominalDiameterName = "DN1400  (1420,0)" });
             nominalDiameter.Add(new NominalDiameter() { nominalDiameter = 1620.0, nominalDiameterName = "DN1600  (1620,0)" });
             nominalDiameter.Add(new NominalDiameter() { nominalDiameter = 1820.0, nominalDiameterName = "DN1800  (1820,0)" });
-            nominalDiameter.Add(new NominalDiameter() { nominalDiameter = 2020.0, nominalDiameterName = "DN2000  (2020,0)" });
+            nominalDiameter.Add(new NominalDiameter() { nominalDiameter = 2020.0, nominalDiameterName = "DN1800  (2020,0)" });
 
             pipeNominalDiameterComboBox.DataSource = nominalDiameter;
             pipeNominalDiameterComboBox.ValueMember = "nominalDiameter";
